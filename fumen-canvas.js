@@ -43,10 +43,13 @@ function draw(fumenPage, tilesize, numrows, transparent) {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext('2d');
 
-    context.fillStyle = colors['Empty'].normal
     if(!transparent) {
-        context.fillRect(0, 0, width, height);
+        context.fillStyle = colors['Empty'].normal
     }
+    else {
+        context.fillStyle = 'rgba(0, 0, 0, 0)'
+    }
+    context.fillRect(0, 0, width, height);
 
     for(i = 0; i < 10; i++) {
         for(j = 0; j < numrows; j++) {
@@ -111,7 +114,9 @@ function drawFumens(fumenPages, tilesize, numrows, start, end, transparent) {
     encoder.setRepeat(0);   // 0 for repeat, -1 for no-repeat
     encoder.setDelay(500);  // frame delay in ms
     encoder.setQuality(1); // image quality. 10 is default.
-    encoder.setTransparent('rgba(0, 0, 0, 0)')
+    if(transparent) {
+        encoder.setTransparent('rgba(0, 0, 0, 0)')
+    }
     for(x = start; x < end; x++) {
         encoder.addFrame(draw(fumenPages[x], tilesize, numrows, transparent).getContext('2d'))
     }
