@@ -140,10 +140,15 @@ require('yargs/yargs')(process.argv.slice(2))
             .option('transparent', {
                 describe: 'Make empty squares transparent.',
                 type: 'boolean'
+            })
+            .option('size', {
+                describe: 'Size of a single square in pixels.',
+                default: 22,
+                type: 'number'
             }),
         handler: (argv) => {
             var pages = decoder.decode(argv.fumen);
-            var canvas = draw(pages[parseInt(argv.page)], 22, argv.height, argv.transparent)
+            var canvas = draw(pages[parseInt(argv.page)], argv.size, argv.height, argv.transparent)
             var buffer = canvas.toBuffer('image/png');
             fs.writeFileSync(argv.outputfile, buffer)
         }
@@ -170,10 +175,15 @@ require('yargs/yargs')(process.argv.slice(2))
             .option('transparent', {
                 describe: 'Make empty squares transparent.',
                 type: 'boolean'
+            })
+            .option('size', {
+                describe: 'Size of a single square in pixels.',
+                default: 22,
+                type: 'number'
             }),
         handler: (argv) => {
             var pages = decoder.decode(argv.fumen);
-            gif = drawFumens(pages, 22, argv.height, argv.start, argv.end, argv.transparent)
+            gif = drawFumens(pages, argv.size, argv.height, argv.start, argv.end, argv.transparent)
             gif.createReadStream().pipe(fs.createWriteStream(argv.outputfile))
             gif.finish()
         }
