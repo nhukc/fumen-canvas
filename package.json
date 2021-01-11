@@ -1,0 +1,33 @@
+{
+  "name": "fumen-canvas",
+  "version": "1.0.0",
+  "description": "Command line utility to render fumens into gif/png images.",
+  "main": "fumen-canvas.js",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "fs": "^0.0.1-security",
+    "gifencoder": "^2.0.1",
+    "tetris-fumen": "^1.1.1",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node fumen-canvas.js gif v115@lhI8AeAgWYAQIKvDll2TASIvBElCyTASIqPEFGNXEv?hDxuBxwBTtBToB a.gif"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathan-Huckleberry/fumen-canvas.git"
+  },
+  "keywords": [
+    "fumen",
+    "gif",
+    "png",
+    "tetris"
+  ],
+  "author": "Nathan Huckleberry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nathan-Huckleberry/fumen-canvas/issues"
+  },
+  "homepage": "https://github.com/Nathan-Huckleberry/fumen-canvas#readme"
+}
