@@ -1,5 +1,5 @@
 # fumen-canvas
-A basic command-line utility for rendering fumens as png/gif images in the style of four.lol. Written using https://github.com/knewjade/tetris-fumen.
+A basic command-line utility for rendering fumens as png/gif images in the style of [four.lol](https://four.lol/). Written using Knewjade's [tetris-fumen](https://github.com/knewjade/tetris-fumen).
 
 <p align="center">
   <img width="440" height="220" src="pc.gif">
