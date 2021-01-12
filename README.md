@@ -34,3 +34,8 @@ Options:
   --height       Number of rows to render starting at the bottom.       [number]
   --transparent  Make empty squares transparent.                       [boolean]
 ```
+
+### Example Usage
+```
+node fumen-canvas.js gif v115@vhKyOJDkBmfBksB9tBHjBplBNrBkmBHsBAAA --size 44 pc.gif
+```
