@@ -1,7 +1,12 @@
 # fumen-canvas
+A basic command-line utility for rendering fumens as png/gif images. Written using https://github.com/knewjade/tetris-fumen.
+
+<p align="center">
+  <img width="220" height="110" src="pc.gif">
+</p>
 
 ## Usage
-Rendering single page to png
+Rendering single fumen page to png
 ```
 fumen-canvas.js image <fumen> <output file>
 
