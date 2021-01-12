@@ -37,5 +37,5 @@ Options:
 
 ### Example Usage
 ```
-node fumen-canvas.js gif v115@vhKyOJDkBmfBksB9tBHjBplBNrBkmBHsBAAA --size 44 pc.gif
+node fumen-canvas.js gif v115@vhKyOJDkBmfBksB9tBHjBplBNrBkmBHsBAAA pc.gif
 ```
