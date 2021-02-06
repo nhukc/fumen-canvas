@@ -105,6 +105,7 @@ function drawFumens(fumenPages, tilesize, numrows, start, end, transparent) {
         }
         numrows+=2
     }
+    numrows = Math.min(23, numrows);
     const width = tilesize*10;
     const height = numrows*tilesize;
     const canvas = createCanvas(width, height)
